@@ -1,0 +1,18 @@
+                    // microcontroller toggle bits program //
+                    
+#include<reg51.h>
+void main (void)
+{
+	int i;
+	while(1)
+	{
+		for(i=0;i<200;i++)
+		{
+			P1=0x55;
+		}
+		for(i=0;i<200;i++)
+		{
+			P1=0xAA;
+		}
+	}
+}
